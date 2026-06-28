@@ -1,0 +1,26 @@
+[
+  {
+    "id": "future-of-web-dev",
+    "title": "The Future of Web Development in 2024",
+    "date": "June 28, 2024",
+    "category": "Technology",
+    "author": "John Doe",
+    "readTime": "5 min",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "summary": "Exploring the shift towards edge computing and AI-integrated development environments.",
+    "content": "<p>Web development is evolving faster than ever...</p><h4>The Rise of AI</h4><p>Artificial intelligence is no longer just a buzzword...</p>",
+    "featured": true
+  },
+  {
+    "id": "minimalist-lifestyle",
+    "title": "10 Steps to a Minimalist Lifestyle",
+    "date": "June 25, 2024",
+    "category": "Lifestyle",
+    "author": "Jane Smith",
+    "readTime": "4 min",
+    "image": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85",
+    "summary": "How decluttering your physical space can lead to mental clarity and better focus.",
+    "content": "<p>Minimalism isn't about having nothing...</p>",
+    "featured": false
+  }
+]

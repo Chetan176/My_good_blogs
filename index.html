@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog | Professional Insights</title>
+    <meta name="description" content="A professional blog for modern technology and lifestyle.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"><strong>MODERN<span>BLOG</span></strong></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌓 Mode</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" style="padding: 60px 0; text-align: center;">
+            <h1>Stay Curious.</h1>
+            <p>Discover stories, thinking, and expertise from writers on any topic.</p>
+            <input type="text" id="search-input" placeholder="Search articles..." style="padding: 12px; width: 300px; margin-top: 20px; border-radius: 25px; border: 1px solid var(--border-color);">
+        </section>
+
+        <!-- GOOGLE_ADSENSE_HOMEPAGE_TOP -->
+        <div class="ad-slot">Ad Space - Header</div>
+
+        <h2>Latest Articles</h2>
+        <div id="articles-container" class="article-grid">
+            <!-- Articles injected by blog.js -->
+        </div>
+
+        <!-- GOOGLE_ADSENSE_HOMEPAGE_MIDDLE -->
+        <div class="ad-slot">Ad Space - In-feed</div>
+    </main>
+
+    <footer class="container" style="margin-top: 50px; padding: 40px 0; border-top: 1px solid var(--border-color);">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+            <div>
+                <h4>Newsletter</h4>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter email" required style="padding: 8px;">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div>
+                <h4>Social</h4>
+                <p>Twitter • LinkedIn</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+        window.onload = async () => {
+            const articles = await fetchArticles();
+            renderArticles(articles, 'articles-container');
+            initSearch();
+        };
+    </script>
+</body>
+</html>

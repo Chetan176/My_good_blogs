@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | Modern Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>...</header> <!-- Same as index -->
+
+    <article class="container" style="max-width: 800px; margin-top: 40px;">
+        <img id="article-image" src="" alt="" style="width: 100%; border-radius: 15px;">
+        
+        <h1 id="article-title" style="font-size: 2.5rem; margin-top: 20px;"></h1>
+        <div id="article-meta" style="color: var(--secondary-text); margin-bottom: 20px;"></div>
+
+        <!-- GOOGLE_ADSENSE_BELOW_TITLE -->
+        <div class="ad-slot">Advertisement</div>
+
+        <div id="article-content"></div>
+
+        <!-- GOOGLE_ADSENSE_MIDDLE_ARTICLE -->
+        <div class="ad-slot">In-Article Advertisement</div>
+
+        <div class="share-buttons" style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <strong>Share:</strong> 
+            <button onclick="window.open('https://twitter.com/intent/tweet?url='+window.location.href)">Twitter</button>
+        </div>
+    </article>
+
+    <section class="container">
+        <hr>
+        <h3>Related Articles</h3>
+        <div id="related-grid" class="article-grid"></div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+    <script>window.onload = loadSingleArticle;</script>
+</body>
+</html>
