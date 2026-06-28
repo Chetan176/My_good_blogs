@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "The Evolution of Artificial Intelligence in Modern Healthcare",
+    "category": "AI",
+    "author": "Admin",
+    "date": "Oct 24, 2024",
+    "readTime": "5 min",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "How machine learning models are helping doctors diagnose diseases faster than ever before.",
+    "content": "Artificial intelligence is no longer a concept of the future. In today's healthcare landscape, AI algorithms are analyzing medical images with precision that rivals human experts. This article explores the integration of neural networks in radiology and patient care management...",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Top 10 Programming Languages to Learn in 2025",
+    "category": "Technology",
+    "author": "Staff Writer",
+    "date": "Oct 22, 2024",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "A comprehensive guide to the most in-demand languages for the next tech decade.",
+    "content": "The tech industry moves fast. While Python remains king for AI, new contenders like Rust and Mojo are gaining traction for systems programming. We break down which languages will offer the highest ROI for your career...",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Why Digital Literacy is the New Education Standard",
+    "category": "Education",
+    "author": "EduTech Team",
+    "date": "Oct 21, 2024",
+    "readTime": "6 min",
+    "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "Traditional curricula are shifting to include coding, data analysis, and online safety.",
+    "content": "Education is undergoing a massive transformation. Digital literacy is no longer an optional skill; it is a fundamental requirement for the modern workforce. Schools are now integrating tablets and cloud computing into daily lessons...",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "The Future of Cloud Gaming: Is Hardware Dead?",
+    "category": "Gaming",
+    "author": "Gamer Zone",
+    "date": "Oct 20, 2024",
+    "readTime": "7 min",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "With 5G and high-speed fiber, gaming consoles might become a thing of the past.",
+    "content": "Streaming a game is becoming as easy as streaming a movie. With services like Xbox Cloud and GeForce Now, the need for expensive GPUs is diminishing. But is the latency low enough for competitive play? We investigate...",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Global Tech Policy Update: What You Need to Know",
+    "category": "News",
+    "author": "Global News",
+    "date": "Oct 19, 2024",
+    "readTime": "4 min",
+    "image": "https://images.unsplash.com/photo-1504711432869-5d39a110fdd7?auto=format&fit=crop&w=800&q=80",
+    "excerpt": "New regulations regarding data privacy and AI ethics are being signed into law.",
+    "content": "Governments worldwide are finally catching up to Big Tech. From the EU's AI Act to new privacy laws in California, the landscape of the internet is changing for both consumers and corporations...",
+    "featured": false
+  },
+  { "id": 6, "title": "Generative AI in Graphic Design", "category": "AI", "author": "Admin", "date": "Oct 18, 2024", "readTime": "5 min", "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80", "excerpt": "How Midjourney and DALL-E are changing the creative process.", "content": "Full content here...", "featured": false },
+  { "id": 7, "title": "5G vs 6G: What is the Difference?", "category": "Technology", "author": "Admin", "date": "Oct 17, 2024", "readTime": "6 min", "image": "https://images.unsplash.com/photo-1562408590-e3290d094d3d?auto=format&fit=crop&w=800&q=80", "excerpt": "Understanding the next leap in wireless communication.", "content": "Full content here...", "featured": false },
+  { "id": 8, "title": "The Benefits of Remote Learning", "category": "Education", "author": "Admin", "date": "Oct 16, 2024", "readTime": "4 min", "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80", "excerpt": "Flexibility and accessibility are driving the home-schooling trend.", "content": "Full content here...", "featured": false },
+  { "id": 9, "title": "VR Gaming: A New Reality", "category": "Gaming", "author": "Admin", "date": "Oct 15, 2024", "readTime": "9 min", "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&q=80", "excerpt": "Immersive experiences that go beyond the screen.", "content": "Full content here...", "featured": false },
+  { "id": 10, "title": "Tech Mergers to Watch in 2024", "category": "News", "author": "Admin", "date": "Oct 14, 2024", "readTime": "3 min", "image": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=800&q=80", "excerpt": "Silicon Valley is consolidating. Who's buying who?", "content": "Full content here...", "featured": false },
+  { "id": 11, "title": "AI Ethics and Responsibility", "category": "AI", "author": "Admin", "date": "Oct 13, 2024", "readTime": "7 min", "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80", "excerpt": "The moral implications of automated decision making.", "content": "Full content here...", "featured": false },
+  { "id": 12, "title": "Smart Cities: The Future of Urban Life", "category": "Technology", "author": "Admin", "date": "Oct 12, 2024", "readTime": "6 min", "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80", "excerpt": "How IoT is making cities more efficient and livable.", "content": "Full content here...", "featured": false },
+  { "id": 13, "title": "Gamification in Online Courses", "category": "Education", "author": "Admin", "date": "Oct 11, 2024", "readTime": "5 min", "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80", "excerpt": "Using game mechanics to boost student engagement.", "content": "Full content here...", "featured": false },
+  { "id": 14, "title": "The Rise of eSports Tournaments", "category": "Gaming", "author": "Admin", "date": "Oct 10, 2024", "readTime": "8 min", "image": "https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80", "excerpt": "Competitive gaming is filling stadiums worldwide.", "content": "Full content here...", "featured": false },
+  { "id": 15, "title": "Cybersecurity Threats in 2024", "category": "News", "author": "Admin", "date": "Oct 09, 2024", "readTime": "6 min", "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80", "excerpt": "Ransomware and phishing are becoming more sophisticated.", "content": "Full content here...", "featured": false }
+]

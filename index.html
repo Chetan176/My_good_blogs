@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Good Blog | Tech & AI Insights</title>
+    <meta name="description" content="A premium blog about AI, Technology, Education, and Gaming.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-black tracking-tight text-gray-900">
+                        MY GOOD<span class="text-blue-600">BLOG</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="text-blue-600">Home</a>
+                    <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+                    <a href="privacy.html" class="hover:text-blue-600 transition">Privacy</a>
+                </div>
+
+                <div class="relative w-48 hidden lg:block">
+                    <input type="text" id="searchInput" placeholder="Search news..." class="w-full bg-gray-50 border border-gray-200 rounded-full py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                    <i data-lucide="search" class="absolute left-3 top-2.5 w-4 h-4 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AdSense Top Placeholder -->
+    <div class="max-w-7xl mx-auto px-4 py-6">
+        <div class="bg-gray-50 border border-dashed border-gray-300 rounded-lg h-24 flex items-center justify-center text-gray-400 text-sm">
+            <!-- ADSENSE CODE HERE -->
+            Advertisement
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Hero Section -->
+        <section id="hero-container" class="mb-16">
+            <!-- Injected by JS -->
+        </section>
+
+        <!-- Categories -->
+        <div class="flex flex-wrap gap-3 mb-10 overflow-x-auto pb-2" id="category-bar">
+            <button class="cat-btn active px-6 py-2 rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition font-medium" data-category="All">All Stories</button>
+            <button class="cat-btn px-6 py-2 rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition font-medium" data-category="AI">AI</button>
+            <button class="cat-btn px-6 py-2 rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition font-medium" data-category="Technology">Tech</button>
+            <button class="cat-btn px-6 py-2 rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition font-medium" data-category="Education">Education</button>
+            <button class="cat-btn px-6 py-2 rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition font-medium" data-category="Gaming">Gaming</button>
+            <button class="cat-btn px-6 py-2 rounded-full border border-gray-200 hover:border-blue-600 hover:text-blue-600 transition font-medium" data-category="News">News</button>
+        </div>
+
+        <!-- Latest Articles Grid -->
+        <h2 class="text-3xl font-black mb-8">Latest <span class="text-blue-600">Updates</span></h2>
+        <div id="article-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Injected by JS -->
+        </div>
+
+        <!-- AdSense Middle Placeholder -->
+        <div class="my-16 bg-gray-50 border border-dashed border-gray-300 rounded-xl h-48 flex items-center justify-center text-gray-400">
+            <!-- ADSENSE CODE HERE -->
+            Sponsored Content
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="bg-gray-900 py-20 text-white mt-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-black mb-4">Stay Informed</h2>
+            <p class="text-gray-400 mb-10 text-lg">Join 20,000+ readers who receive our weekly deep-dive into AI and tech.</p>
+            <form class="flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 rounded-xl text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-500/20">
+                <button class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl font-bold transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-black mb-6">MY GOOD<span class="text-blue-600">BLOG</span></div>
+                <p class="text-gray-500 max-w-sm">Exploring the future of intelligence and technology. High-quality reporting for a digital generation.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Navigation</h4>
+                <ul class="space-y-4 text-gray-600">
+                    <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-600">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+                    <li><a href="privacy.html" class="hover:text-blue-600">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Connect</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 transition"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 transition"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 transition"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-gray-50 text-center text-gray-400 text-sm">
+            &copy; 2024 My Good Blog. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
