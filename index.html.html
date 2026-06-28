@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse | Future of AI, Tech & Gaming</title>
+    <meta name="description" content="Stay updated with the latest in AI, Technology, Education, and Gaming. Expert insights and news.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="TechPulse | Modern Tech Blog">
+    <meta property="og:description" content="Insights into the future of technology and AI.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- AdSense Code Placeholder (Insert here) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body class="bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b dark:bg-gray-900/80 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                        TechPulse
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="hover:text-blue-600 font-medium">About</a>
+                    <a href="contact.html" class="hover:text-blue-600 font-medium">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+                        <i data-lucide="sun" class="hidden dark:block"></i>
+                        <i data-lucide="moon" class="block dark:hidden"></i>
+                    </button>
+                    <div class="relative hidden sm:block">
+                        <input type="text" id="searchInput" placeholder="Search..." class="pl-10 pr-4 py-2 border rounded-full bg-gray-100 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 border-none">
+                        <i data-lucide="search" class="absolute left-3 top-2.5 w-4 h-4 text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AdSense Homepage Top Placeholder -->
+    <div class="max-w-7xl mx-auto px-4 py-4 text-center">
+        <div class="bg-gray-200 dark:bg-gray-800 p-4 rounded text-sm text-gray-400">
+            Advertisement - Sponsored Content
+            <!-- Insert AdSense Unit Code Here -->
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Hero Section -->
+        <section id="featured-hero" class="mb-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm p-6 lg:p-12 border border-gray-100 dark:border-gray-700">
+            <!-- Content will be injected by JS -->
+        </section>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap gap-2 mb-8" id="category-filters">
+            <button class="cat-filter active px-4 py-2 rounded-full bg-blue-600 text-white" data-category="All">All</button>
+            <button class="cat-filter px-4 py-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border" data-category="AI">AI</button>
+            <button class="cat-filter px-4 py-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border" data-category="Technology">Technology</button>
+            <button class="cat-filter px-4 py-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border" data-category="Education">Education</button>
+            <button class="cat-filter px-4 py-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border" data-category="Gaming">Gaming</button>
+            <button class="cat-filter px-4 py-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border" data-category="News">News</button>
+        </div>
+
+        <!-- Article Grid -->
+        <div id="article-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Articles injected here -->
+        </div>
+
+        <!-- AdSense Footer Placeholder -->
+        <div class="mt-16 text-center">
+            <div class="bg-gray-200 dark:bg-gray-800 p-8 rounded text-sm text-gray-400">
+                Advertisement - Sponsored Content
+                <!-- Insert AdSense Unit Code Here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="bg-blue-600 py-16 mt-16">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Stay Ahead of the Curve</h2>
+            <p class="text-blue-100 mb-8">Get the latest insights on AI and Technology delivered to your inbox every week.</p>
+            <form class="flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-3 rounded-full focus:outline-none">
+                <button type="submit" class="bg-gray-900 text-white px-8 py-3 rounded-full font-bold hover:bg-black transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900 border-t dark:border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TechPulse</a>
+                <p class="mt-4 text-gray-500 max-w-sm">Exploring the intersection of human intelligence and technological advancement. Your source for daily updates in AI, Gaming, and Education.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="about.html" class="hover:text-blue-600">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+                    <li><a href="privacy.html" class="hover:text-blue-600">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Socials</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-blue-600"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-blue-600"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-blue-600"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t dark:border-gray-800 text-center text-gray-500 text-sm">
+            © 2024 TechPulse. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

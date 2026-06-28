@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | TechPulse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b dark:bg-gray-900/80 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">TechPulse</a>
+            <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+                <i data-lucide="sun" class="hidden dark:block"></i>
+                <i data-lucide="moon" class="block dark:hidden"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Main Article Content -->
+        <article class="lg:col-span-2">
+            <div id="article-header"></div>
+            
+            <!-- In-Article Ad Slot -->
+            <div class="my-8 bg-gray-100 dark:bg-gray-800 p-4 text-center text-xs text-gray-400 rounded">
+                ADVERTISEMENT
+                <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxx" data-ad-slot="xxx" data-ad-format="auto"></ins> -->
+            </div>
+
+            <div id="article-body" class="prose prose-lg dark:prose-invert max-w-none"></div>
+
+            <div class="mt-12 pt-8 border-t dark:border-gray-800">
+                <h3 class="text-xl font-bold mb-6">Share this article</h3>
+                <div class="flex gap-4">
+                    <button class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 flex items-center gap-2">
+                        <i data-lucide="twitter" class="w-4 h-4"></i> Twitter
+                    </button>
+                    <button class="px-6 py-2 bg-blue-800 text-white rounded-full hover:bg-blue-900 flex items-center gap-2">
+                        <i data-lucide="facebook" class="w-4 h-4"></i> Facebook
+                    </button>
+                </div>
+            </div>
+
+            <!-- Comments Placeholder -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold mb-8">Comments (0)</h3>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl border dark:border-gray-700">
+                    <textarea class="w-full p-4 rounded-xl border dark:bg-gray-900 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none" rows="4" placeholder="Join the discussion..."></textarea>
+                    <button class="mt-4 px-8 py-3 bg-blue-600 text-white rounded-full font-bold">Post Comment</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="space-y-8">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl border dark:border-gray-700">
+                <h4 class="font-bold mb-4">Sidebar Ad</h4>
+                <div class="aspect-square bg-gray-100 dark:bg-gray-900 flex items-center justify-center text-gray-400 text-sm">
+                    300 x 300 Ad Space
+                </div>
+            </div>
+            
+            <div class="sticky top-24">
+                <h4 class="font-bold mb-6">Related Articles</h4>
+                <div id="related-articles" class="space-y-6"></div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/blog.js"></script>
+    <script>
+        // Specific logic to load one article
+        window.onload = async () => {
+            const params = new URLSearchParams(window.location.search);
+            const id = parseInt(params.get('id'));
+            const response = await fetch('data/articles.json');
+            const articles = await response.json();
+            const article = articles.find(a => a.id === id);
+
+            if (article) {
+                document.title = `${article.title} | TechPulse`;
+                document.getElementById('article-header').innerHTML = `
+                    <div class="mb-4 flex gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-200 rounded-full text-xs font-bold uppercase tracking-wider">${article.category}</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">${article.title}</h1>
+                    <div class="flex items-center gap-4 mb-8 text-gray-500">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">${article.author[0]}</div>
+                        <div>
+                            <p class="font-bold text-gray-900 dark:text-white">${article.author}</p>
+                            <p class="text-sm">${article.date} · ${article.readTime} read</p>
+                        </div>
+                    </div>
+                    <img src="${article.image}" class="w-full h-96 object-cover rounded-3xl mb-10 shadow-lg">
+                `;
+                document.getElementById('article-body').innerHTML = `
+                    <p class="text-xl leading-relaxed mb-6 font-medium text-gray-700 dark:text-gray-300">${article.excerpt}</p>
+                    <p class="leading-relaxed mb-6">${article.content}</p>
+                    <p class="leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                `;
+                
+                // Related articles logic
+                const related = articles.filter(a => a.category === article.category && a.id !== article.id).slice(0, 3);
+                document.getElementById('related-articles').innerHTML = related.map(rel => `
+                    <a href="article.html?id=${rel.id}" class="group block">
+                        <img src="${rel.image}" class="w-full h-32 object-cover rounded-xl mb-2">
+                        <h5 class="font-bold group-hover:text-blue-600 transition">${rel.title}</h5>
+                    </a>
+                `).join('');
+            }
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
