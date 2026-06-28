@@ -79,9 +79,21 @@ function setupFilters() {
 function setupSearch() {
     const input = document.getElementById('searchInput');
     if (!input) return;
-    input.addEventListener('input', (e) => {
-        const val = e.target.value.toLowerCase();
-        const filtered = articles.filter(a => a.title.toLowerCase().includes(val));
+
+    input.addEventListener('keyup', function() {
+        const val = this.value.toLowerCase().trim();
+
+        if (val === "") {
+            renderGrid(articles);
+            return;
+        }
+
+        const filtered = articles.filter(article =>
+            article.title.toLowerCase().includes(val) ||
+            article.category.toLowerCase().includes(val) ||
+            article.excerpt.toLowerCase().includes(val)
+        );
+
         renderGrid(filtered);
     });
 }
