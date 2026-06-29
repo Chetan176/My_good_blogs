@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading... | My Good Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-white text-gray-900">
@@ -36,12 +36,12 @@
         </div>
     </div>
 
-    <script src="js/blog.js"></script>
+    <script src="blog.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
             const urlParams = new URLSearchParams(window.location.search);
             const id = parseInt(urlParams.get('id'));
-            const response = await fetch('data/articles.json');
+            const response = await fetch('articles.json');
             const data = await response.json();
             const article = data.find(a => a.id === id);
 
