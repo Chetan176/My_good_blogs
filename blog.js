@@ -23,7 +23,7 @@ function renderHero() {
     if (!container) return;
 
     container.innerHTML = `
-        <a href="article.html?id=${hero.id}" class="group grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <a href="${hero.url}" class="group grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div class="lg:col-span-7 overflow-hidden rounded-3xl">
                 <img src="${hero.image}" class="w-full h-[400px] lg:h-[500px] object-cover group-hover:scale-105 transition duration-700">
             </div>
