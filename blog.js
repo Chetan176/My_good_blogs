@@ -47,7 +47,7 @@ function renderGrid(items) {
 
     grid.innerHTML = items.map(a => `
         <div class="article-card group">
-            <a href="${hero.url}">
+            <a href="${a.url}">
                 <div class="relative mb-6 overflow-hidden rounded-2xl">
                     <img src="${a.image}" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-black uppercase">${a.category}</div>
