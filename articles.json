@@ -1,12 +1,24 @@
 [
   {
-  "id": 16,
+  "id": 1,
   "title": "Top 10 Free AI Tools for Students in 2026",
   "category": "AI",
   "author": "Chetan",
   "date": "Jun 29, 2026",
   "readTime": "10 min",
   "image": "image/ai-tools.jpg",
+  "excerpt": "Discover the top 10 free AI tools every student should use in 2026.",
+  "featured": true,
+  "url": "articles/ai-tools-for-students-2026.html"
+},
+  {
+  "id": 2,
+  "title": "Top 10 Free AI Tools for Students in 2026",
+  "category": "AI",
+  "author": "Chetan",
+  "date": "Jun 29, 2026",
+  "readTime": "10 min",
+  "image": "image/ai-course-2026.jpg",
   "excerpt": "Discover the top 10 free AI tools every student should use in 2026.",
   "featured": true,
   "url": "articles/ai-tools-for-students-2026.html"
