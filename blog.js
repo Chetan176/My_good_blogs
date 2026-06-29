@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchArticles() {
     try {
-        const response = await fetch('data/articles.json');
+        const response = await fetch('articles.json');
         articles = await response.json();
         renderHero();
         renderGrid(articles);
